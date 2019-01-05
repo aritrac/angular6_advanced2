@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CountdisplayComponent } from './countdisplay/countdisplay.component';
+import { RecipesComponent } from './recipes/recipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountdisplayComponent
+    CountdisplayComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule,
