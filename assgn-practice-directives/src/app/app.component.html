@@ -19,9 +19,9 @@
         </ng-template>
       </ul>
       <p 
-        *ngFor="let clk of countStore"
-        [ngStyle]="{backgroundColor: clk >= 5 ? 'blue' : 'transparent'}"
-        [ngClass]="{'white-text': clk >= 5}"
+        *ngFor="let clk of countStore; let i = index"
+        [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'transparent'}"
+        [ngClass]="{'white-text': i > 4}"
       >{{ clk }}</p>
       <!-- <app-countdisplay *ngFor="let clk of countStore"></app-countdisplay> -->
     </div>

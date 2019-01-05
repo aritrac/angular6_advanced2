@@ -14,6 +14,6 @@ export class AppComponent {
   toggleDisplay() {
     this.isDisplayed = !this.isDisplayed;
     this.clickCount ++;
-    this.countStore.push(this.clickCount);
+    this.countStore.push(new Date());
   }
 }
