@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assgn-practice-directives';
+  isDisplayed = true;
+  clickCount = 0;
+  countStore = [];
+
+  toggleDisplay() {
+    this.isDisplayed = !this.isDisplayed;
+    this.clickCount ++;
+    this.countStore.push(this.clickCount);
+  }
 }
