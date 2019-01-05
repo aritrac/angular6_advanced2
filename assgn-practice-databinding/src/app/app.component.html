@@ -13,6 +13,11 @@
         <p>{{ username }}</p>
         <button class="btn btn-primary" 
         [disabled]="isDisabled" (click)="onClickResetUsername($event)">Save Username</button>
+        <!-- Second way in which the same can be achieved -->
+        <!-- <button
+        class="btn btn-primary"
+        [disabled]="username === ''"
+        (click)="username = ''">Reset User</button> -->
       </ul>
     </div>
   </div>
